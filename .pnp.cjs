@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:12.2.4"],\
             ["next", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:12.2.4"],\
             ["postcss", "npm:8.4.16"],\
+            ["prisma", "npm:4.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:18.2.0"],\
             ["tailwindcss", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:3.1.8"],\
@@ -313,6 +314,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.0"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prisma/engines", [\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.2.0-06c7b6fa86/node_modules/@prisma/engines/",\
+          "packageDependencies": [\
+            ["@prisma/engines", "npm:4.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -952,6 +962,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:12.2.4"],\
             ["next", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:12.2.4"],\
             ["postcss", "npm:8.4.16"],\
+            ["prisma", "npm:4.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:18.2.0"],\
             ["tailwindcss", "virtual:275757ecfc955ca714ad06f2aa80ab5a0ae006baae482e0ad19ca96e1ad213d731240dc1a367ad90110760e07a7cd6bddfe47d379ee8b8a7e5745582a7077c9a#npm:3.1.8"],\
@@ -3411,6 +3422,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prelude-ls-npm-1.2.1-3e4d272a55-cd192ec0d0.zip/node_modules/prelude-ls/",\
           "packageDependencies": [\
             ["prelude-ls", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prisma", [\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/unplugged/prisma-npm-4.2.0-99929b6b55/node_modules/prisma/",\
+          "packageDependencies": [\
+            ["prisma", "npm:4.2.0"],\
+            ["@prisma/engines", "npm:4.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
