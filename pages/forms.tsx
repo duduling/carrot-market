@@ -1,6 +1,5 @@
 import { FieldErrors, useForm } from "react-hook-form";
 
-// Better validation
 // Better Erros (set, clear, display)
 // Have control over inputs
 
@@ -11,7 +10,11 @@ interface LoginForm {
 }
 
 export default function Forms() {
-  const { register, handleSubmit } = useForm<LoginForm>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginForm>({ mode: "onChange" });
   const onVaild = (data: LoginForm): void => {
     console.log("Hi, I'm vaild");
   };
@@ -26,18 +29,25 @@ export default function Forms() {
         {...register("username", {
           required: "Username is required",
           minLength: {
-            value: 5,
             message: "The username should be longer than 5 chars.",
+            value: 5,
           },
         })}
         type="text"
         placeholder="Username"
       />
       <input
-        {...register("email", { required: "Username is required" })}
+        {...register("email", {
+          required: "Username is required",
+          validate: {
+            notGmail: (value) =>
+              !value.includes("@gmail.com") || "Gmail is not allowed",
+          },
+        })}
         type="email"
         placeholder="Email"
       />
+      {errors.email?.message}
       <input
         {...register("password", { required: "Password is required" })}
         type="password"
