@@ -24,8 +24,9 @@ const Enter: NextPage = () => {
     reset();
     setMethod("phone");
   };
-  const onVaild = (data: EnterForm) => {
-    enter(data);
+  const onVaild = (validForm: EnterForm) => {
+    if (loading) return;
+    enter(validForm);
   };
   return (
     <div className="mt-16 px-4">
@@ -85,9 +86,7 @@ const Enter: NextPage = () => {
           ) : null}
           {method === "email" ? <Button text={"Get login link"} /> : null}
           {method === "phone" ? (
-            <Button
-              text={submitting ? "Loading..." : "Get one-time password"}
-            />
+            <Button text={loading ? "Loading..." : "Get one-time password"} />
           ) : null}
         </form>
 
