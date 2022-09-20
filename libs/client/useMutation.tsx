@@ -1,4 +1,3 @@
-import { prepareServerlessUrl } from "next/dist/server/base-server";
 import { useState } from "react";
 
 interface UseMutationState {
@@ -6,7 +5,6 @@ interface UseMutationState {
   data?: object;
   error?: object;
 }
-
 type UseMutationResult = [(data: any) => void, UseMutationState];
 
 export default function useMutation(url: string): UseMutationResult {
@@ -20,7 +18,7 @@ export default function useMutation(url: string): UseMutationResult {
     setState((prev) => ({ ...prev, loading: true }));
     fetch(url, {
       headers: {
-        "Content-type": "application/ json",
+        "Content-type": "application/json",
       },
       method: "POST",
       body: JSON.stringify(data),
