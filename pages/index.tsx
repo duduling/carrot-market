@@ -6,8 +6,8 @@ import useUser from "@libs/client/useUser";
 import Head from "next/head";
 
 const Home: NextPage = () => {
-  const user = useUser();
-  console.log("🚀 ~ file: index.tsx ~ line 10 ~ user", user);
+  const { user, isLoading } = useUser();
+
   return (
     <Layout title="홈" hasTabBar>
       <Head>
